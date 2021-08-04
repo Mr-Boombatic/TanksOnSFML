@@ -1,0 +1,10 @@
+debug/gtest-all.o
+debug/gmock-all.o
+debug/main.o
+debug/.o
+debug/bullet.o
+debug/enemy.o
+debug/main.o
+debug/player.o
+debug/update_bullets.o
+debug/main.o

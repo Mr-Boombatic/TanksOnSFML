@@ -1,0 +1,26 @@
+language:
+− cpp
+
+before_install:
+− pip install −− user cpp−coveralls
+
+addons:
+sonarcloud:
+organization: "seekerk-github"
+token:
+secure: $SONAR_TOKEN
+script:
+− qmake
+− make
+− ./tests/tests
+after_success:
+− coveralls −− root . −E ".*external.*" \
+−E ".*tests.*"
+− build −wrapper − linux −x86 −64 −−out −dir \
+bw−output make c l e a n a l l
+− sonar−scanner
+cache:
+directories:
+− '$HOME/.sonar/cache'
+notifications:
+email: f a l s e

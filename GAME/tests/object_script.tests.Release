@@ -1,0 +1,10 @@
+release/gtest-all.o
+release/gmock-all.o
+release/main.o
+release/.o
+release/bullet.o
+release/enemy.o
+release/main.o
+release/player.o
+release/update_bullets.o
+release/main.o
